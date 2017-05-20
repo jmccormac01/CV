@@ -33,7 +33,7 @@
 
 \begin{aside} % In the aside, each new line forces a line break
 \vspace{0.35cm}~
-\includegraphics[width=4.0cm]{CV_Photo.jpg}
+\includegraphics[width=4.0cm]{CV_Photo.jpg}\vspace{-0.5cm}
 ~
 \section{Contact}
 Department of Physics
@@ -43,31 +43,36 @@ Coventry
 CV4 7AL
 UK
 ~
-{\bf mobile:} 
+\vspace{-0.2cm}{\bf mobile:} 
 +44 77139 46903
 {\bf office:} 
 +44 24765 74211
 {\bf email:}
 {\small j.j.mccormac@warwick.ac.uk}
 ~
-\section{Links}
+\vspace{-0.5cm}\section{Links}
 {\small \faLinkedin~jmcc001}
 {\small \faGithub~\faSkype~jmccormac01}
 {\small \faGlobe~jamesjmccormac.com}
 ~
-\section{Languages}
+\vspace{-0.5cm}\section{Languages}
 English (Native)
 Spanish (Fluent)
-\section{Programming}
-Python, C/C++
-HTML, Javascript, 
-PHP, CSS, MySQL,  
-JQuery, AngularJS,
-Flask, Git
 \section{Computing}
-Linux, Mac, Windows
-IRAF, PyRAF, LaTex,
-Microsoft Office
+\vspace{1mm}{\bf Operating systems:} 
+{\small Linux, macOS, Windows}
+\vspace{1mm}{\bf Programming Languages:} 
+{\small Python, C, Bash,\\HTML, CSS, Javascript}
+\vspace{1mm}{\bf Web Frameworks:}
+{\small Flask, JQuery}
+\vspace{1mm}{\bf Databases:}
+{\small MySQL}
+\vspace{1mm}{\bf Grid Computing:} 
+{\small SGE}
+\vspace{1mm}{\bf Version Control:} 
+{\small Git}
+\vspace{1mm}{\bf Word Processing:} 
+{\small \LaTeX, Microsoft Office}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
@@ -167,8 +172,8 @@ Microsoft Office
 	\item Provided expert training and support to visiting international astronomers
 	\item Responsible for minimising technical downtime at the observatory
 	\item Routine configuration and calibration of the \emph{ACAM}, \emph{IDS}, \emph{LIRIS} \& \emph{WYFFOS} spectrographs, plus the \emph{ACAM}, \emph{PFIP} \& \emph{WFC} CCD cameras. 
-	\item Developed of Python scripts for efficient observing and data calibration
-	\item Developed of Raspberry Pi driven auxiliary camera for the RoboDIMM astronomical seeing monitor
+	\item Developed Python scripts for efficient observing and data calibration
+	\item Developed Raspberry Pi driven auxiliary camera for the RoboDIMM astronomical seeing monitor
 \end{itemize}}
 \end{entrylist}
 \begin{entrylist}
@@ -194,7 +199,7 @@ Microsoft Office
  	\item Designed and built the prototype telescope for newly proposed transiting exoplanet survey \emph{NGTS}.
 	\item Commissioned the prototype at the ORM, La Palma, Canary Islands, Spain and operated it remotely from my home at sea level on La Palma between 2009 and 2010.
 	\item Developed a telescope, camera, focuser and dome control system in C.
-	\item Analysed photometric data using Python and demonstrated the prototypes ability to detect super-Earth and Neptune-sized exoplanets. The commencement of the full £3M NGTS project was based in part on the results of this prototype.
+	\item Analysed photometric data using Python and demonstrated the prototype's ability to detect super-Earth and Neptune-sized exoplanets. The commencement of the full £3M NGTS project was based in part on the results of this prototype.
 \end{itemize}}
 %------------------------------------------------
 \entry
@@ -241,8 +246,6 @@ Microsoft Office
 {Certificate of Entrepreneurial Studies}
 {Queen's University Belfast}
 {Awarded to the winners of an Entrepreneurial Studies competition.}
-
-
 %------------------------------------------------
 \end{entrylist}
 
@@ -337,6 +340,7 @@ Microsoft Office
 {}
 {\small Simpson, E.~K., et al. 2011, AJ, 141, 8}
 \end{entrylist}\\
+{\small A full list of publications can be found at \url{jamesjmccormac.com/publications.php}}\\
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS SECTION
@@ -348,7 +352,7 @@ Microsoft Office
 {\small 2015}
 {\small Monthly Notices of the Royal Astronomical Society}
 {}
-{\small Technical publication on a new scientific instrument}
+{\small Technical publication on a new high-speed scientific camera, CHIMERA}
 
 %------------------------------------------------
 \end{entrylist}
@@ -397,208 +401,72 @@ Microsoft Office
 {\small Third Workshop on Robotic Autonomous Observatories, Malaga}
 {\small Presented the results from the NGTS prototyping phase to the amateur and professional community.}
 %------------------------------------------------
+\end{entrylist}
+\begin{entrylist}
 \entry
 {\small 2013}
 {\small Oral Presentation}
 {\small Isaac Newton Group of Telescopes, La Palma}
-{\small Presented the research I conducted during my PhD to the staff at the ING, Nordic Optical and Mercator telescopes.}
-%------------------------------------------------
-\entry
-{\small 2010}
-{\small Attended}
-{\small Royal Astronomical Society, London}
-{\small Science with the William Herschel Telescope 2010-2020 workshop.}
-%------------------------------------------------
-\entry
-{\small 2008}
-{\small Attended}
-{\small Royal Observatory, Edinburgh}
-{\small ROE Workshop 2008: Habitability in Our Galaxy}
+{\small Presented my PhD research to staff from the ING, NOT and Mercator telescopes.}
 %------------------------------------------------
 \end{entrylist}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
-\section{Interests}
+\section{Software Projects}
+\parbox[t]{12.8cm}{
+    \textbf{DONUTS Image Alignment Algorithm}
+    \hfill
+    {\small\color{lightgray} \faGithub~~\url{github.com/jmccormac01/Donuts}}\\%
+    A simple yet powerful image alignment algorithm used in precise telescope tracking and in extracting precise photometry from astronomical data. The algorithm employs a cross-correlation technique to register translational shifts between astronomical images, allowing the offsets to be corrected. The algorithm is currently in use at the NGTS, NITES and Warwick 1m telescopes. Members of the astronomical community are currently deploying DONUTS at telescopes in Mexico and Chile.  
+    \vspace{\parsep}\\
+    Core Skills:
+    \begin{itemize}
+        \item Image handling and manipulation in Python (Numpy, SciPy, Scikit Image)
+        \item Data analysis using Fast Fourier Transforms
+        \item Continuous deployment and testing with Travis, Landscape and Coveralls. 
+        \item Maintaining documentation along with examples
+        \item Supporting feedback from users, fixing faults and improving stability. 
+    \end{itemize}
+}
 
-{\small \textbf{Professional:} Observational astronomy, extrasolar planets, photometry, image processing, data analysis, telescope construction and maintenance, computer programming, scripting, back/front end web development, scientific writing and public outreach. I am an advocate of open source programming and have made minor contributions to several open source projects (Astropy/CCDPROC, fswebcam and CERES), activity of which can be seen on Github. I have submitted my open source autoguiding and image alignment package DONUTS to Astropy as an affiliated package.}\\
-{\small \textbf{Personal:} Trail running and photography.}
+\parbox[t]{12.8cm}{
+    \textbf{NGTS Operations Web Interface}
+    \hfill
+    {\small\color{lightgray} \faGithub~~\url{github.com:private}}\\%
+    I have developed a Python/Flask web interface that displays the current status of the NGTS observatory in the Atacama Desert, Chile. The web interface displays information such as the current weather, the status of each of the 12 telescopes, views from 8 webcams and all-sky camera, and various diagnostics. It also hosts a custom tool written in Javascript for efficiently selecting which stars to survey for exoplanets. Forms are available to log changes to the observatory hardware and to log the routine maintenance carried out on site. 
+    \vspace{\parsep}\\
+    Core Skills:
+    \begin{itemize}
+    	\item Backend: Python \& MySQL (Numpy, Scipy, Astropy, Matplotlib, PyMySQL, Flask, Flask-WTForms, Jinja \& YouTube API)
+        \item Frontend: HTML, Bootstrap, Javascript \& CSS
+        \item Analysis of large datasets with distributed computing (Sun Grid Engine)
+        \item Integration of software with complex hardware
+        \item Designing fault tolerant systems
+    \end{itemize}
+}
 
+\parbox[t]{12.8cm}{
+    \textbf{Eclipsing Binary Data Analysis Pipeline}
+    \hfill
+    {\small\color{lightgray} \faGithub~~\url{github.com/jmccormac01/Spectroscopy}}\\%
+    I have written two data analysis pipelines for analysing and modelling large sets of photometric and spectroscopic data from low-mass eclipsing binary (EBLM) stars. EBLMs are pairs of stars where the secondary star has a mass between that of Jupiter and a very low-mass star. The goal of my pipeline is to calibration and extract data from various instruments and model the data to measure precise masses and radii for new EBLMs. 
+    \vspace{\parsep}\\
+    Core Skills:
+    \begin{itemize}
+    	\item Calibration and extraction of data from thousands of images and spectra (Python, Numpy, Scipy, Matplotlib)
+	\item Managing database of data products (MySQL)
+    	\item Monte Carlo modelling of data from multiple instruments
+        \item Displaying results via a custom web interface (Angular JS)
+    \end{itemize}
+}
 %----------------------------------------------------------------------------------------
 %	REFERENCES SECTION
 %----------------------------------------------------------------------------------------
 
 \section{References}
 {\small  Available on request}
-
-%-------- CUT TEXT---------
-
-%\emph{The Next Generation of Transiting Exoplanet Surveys} \\ In my thesis I describe the design, construction, commissioning and testing of a prototype telescope for the Next Generation Transit Survey (NGTS), that I carried out between 2008 and 2010. I also describe the new, remotely operated 0.4m NITES telescope which I installed and commissioned on La Palma. I present the results from a 60 night survey for transiting exoplanets in the globular cluster M71 using NITES. Finally, I present a new science-frame autoguiding algorithm with sub-pixel precision, capable of autoguiding on defocused stars, DONUTS. I highlight the off and on-sky tests of DONUTS and explain why such an algorithm is essential for high-precision ground-based photometry.
-
-%I obtained a first class honours degree in my 4 year Masters course at Queen's University. I was awarded the Raymond Greer prize for best overall MSci in 2008.
-
-%My current 4-year postdoc is primarily based on the installation, commissioning and operation of the full NGTS facility at ESO Paranal, Chile. NGTS consists of 12 robotic 20cm red-optimised telescopes and aims to discover Neptune and super-Earth sized exoplanets. NGTS achieved first light with the first telescope in Jan 2015 and the facility reached full capacity (12 telescopes) in Feb 2016. We are currently confirming our first round of planet candidates with radial velocities from the CORALIE and HARPS spectrographs. I have written software and webpages used in the operation of the facility. I am also responsible for the semi-robotic 0.4m NITES telescope on La Palma, which I installed and commissioned during the final year of my PhD. NITES is typically used in exoplanet follow-up from the SuperWASP survey, of which I am also a member. I demonstrate in 1st year Python labs and in 2014 and 2015 I co-supervised 2 groups of final year masters students, both with projects based on NITES observations. In 2015 I began leading a scientific project to discover and characterise very large planets and brown dwarfs from the SuperWASP survey. Finally, I am also involved with the University of Warwick 1m telescope project and the new Gravitational wave Optical Transient Observatory (GOTO) project.
-
-%My duties as a telescope operator involved providing expert support to visiting observers and minimising telescope downtime. As a support astronomer I was responsible for instrument setup, introducing visiting observers to the instruments and enabling them to complete their observations efficiently. I provided support for the ACAM, ISIS and LIRIS instruments on the WHT as well as supporting visiting instruments. I wrote numerous observing scripts in Python that increased efficiency at the observatory and are currently in use today. I also supervised a summer project student in 2013.
-
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small K2-30 b and K2-34 b: Two inflated hot Jupiters around solar-type stars}
-%{}
-%{\small Lillo-Box, J., et al. 2016, A\&A, 594, A50}
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small WASP-113b and WASP-114b, two inflated hot Jupiters with contrasting densities}
-%{}
-%{\small Barros, S.~C.~C., et al. 2016, A\&A, 593, A113}
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small The Next Generation Transit Survey Becomes Operational at Paranal}
-%{}
-%{\small West, R.~G., et al. ESO Messenger, 16, 10}
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small Supernova 2014J at M82 - II. Direct analysis of a middle-class Type Ia supernova}
-%{}
-%{\small Vallely, P., et al. 2016, MNRAS, 460, 1614}
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small WASP-86b and WASP-102b: super-dense versus bloated planets}
-%{}
-%{\small Faedi, F., et al. 2016, ArXiv, 1608.04225}
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small K2-29 b/WASP-152 b: An Aligned and Inflated Hot Jupiter in a Young Visual Binary}
-%{}
-%{\small Santerne, A., et al. 2016,  ApJ, 824, 55}
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small EPIC212521166 b: a Neptune-mass planet with Earth-like density}
-%{}
-%{\small Osborn, H.~P., et al. 2016, ArXiv, 1605.04291}
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small SN 2014J at M82: I. A middle-class type Ia supernova by all spectroscopic metrics}
-%{}
-%{\small Galbany, L., et al. 2016, MNRAS, 457, 525}
-%%------------------------------------------------
-%\end{entrylist}
-%\begin{entrylist}
-%\entry
-%{\small 2016}
-%{\normalfont \small Single Transit Candidates from K2: Detection and Period Estimation}
-%{}
-%{\small Osborn, H.~P., et al. 2016, MNRAS, 457, 2273}
-%%------------------------------------------------
-%\entry
-%{\small 2016}
-%{\normalfont \small WASP-135b: a highly irradiated, inflated hot Jupiter orbiting a G5V star}
-%{}
-%{\small Spake, J., et al. 2016, PASP, 128, 2}
-%%------------------------------------------------
-%\entry
-%{\small 2015}
-%{\normalfont \small Photodynamical mass determination of the multiplanetary system K2-19}
-%{}
-%{\small Barros, S.~C.~C., et al. 2015, MNRAS, 454, 4267}
-%%------------------------------------------------
-%\entry
-%{\small 2015}
-%{\normalfont \small K2 Variable Catalogue: Variable stars and eclipsing binaries in K2 campaigns 1 and 0}
-%{}
-%{\small Armstrong, D.~J., et al. 2015, A\&A, 579, A19}
-%%------------------------------------------------
-%\entry
-%{\small 2014}
-%{\normalfont \small A Window on Exoplanet Dynamical Histories: Rossiter-McLaughlin Observations of WASP-13b and WASP-32b}
-%{}
-%{\small Brothwell, R. D., et al. 2014, ArXiv 1403.4095}
-%%------------------------------------------------
-%\entry
-%{\small 2013}
-%{\normalfont \small Discovery of WASP-65b and WASP-75b: Two hot Jupiters without highly inflated radii}
-%{}
-%{\small G{\'o}mez Maqueo Chew, Y., et al. 2013, A\&A, 559, A36}
-%%------------------------------------------------
-%\entry
-%{\small 2013}
-%{\normalfont \small Discovery of Five Probable Novae in M81}
-%{}
-%{\small Hornoch, K., et al. 2013, The Astronomer's Telegram, 5489, 1}
-%%------------------------------------------------
-%\entry
-%{\small 2013}
-%{\normalfont \small Discovery of Two Apparent Novae in M81}
-%{}
-%{\small Hornoch, K., McCormac, J., Vaduvescu, O., 2013, The Astronomer's Telegram, 5109, 1}
-%%------------------------------------------------
-%\entry
-%{\small 2013}
-%{\normalfont \small The Next Generation Transit Survey (NGTS)}
-%{}
-%{\small Wheatley, P.~J., et al. 2013, European Physical Journal Web of Conferences, 47, 13002}
-%%------------------------------------------------
-%\entry
-%{\small 2013}
-%{\normalfont \small WASP-54b, WASP-56b, and WASP-57b: Three new sub-Jupiter mass planets from SuperWASP}
-%{}
-%{\small Faedi, F., et al. 2013, A\&A, 551, A73}
-%------------------------------------------------
-%\entry
-%{\small 2013}
-%{\normalfont \small WASP-52b, WASP-58b, WASP-59b, and WASP-60b: Four new transiting close-in giant planets}
-%{}
-%{\small H{\'e}brard, G., et al. 2013, A\&A, 549, A134}
-%%------------------------------------------------
-%
-%\entry
-%{\small 2012}
-%{\normalfont \small NGTS: a robotic transit survey to detect Neptune and super-Earth mass planets}
-%{}
-%{\small Chazelas, B., et al. 2012, SPIE Conference Series, 8444}
-%%------------------------------------------------
-%\entry
-%{\small 2012}
-%{\normalfont \small A transiting companion to the eclipsing binary KIC002856960}
-%{}
-%{\small Armstrong, D., et al. 2012, A\&A, 545, L4}
-%%------------------------------------------------
-%\end{entrylist}
-%\begin{entrylist}
-%\entry
-%{\small 2011}
-%{\normalfont \small WASP-35b, WASP-48b, and HAT-P-30b/WASP-51b: Two New Planets and an Independent Discovery of a HAT Planet}
-%{}
-%{\small Enoch, B., et al. 2011, AJ, 142, 86}
-%%------------------------------------------------
-%\entry
-%{\small 2011}
-%{\normalfont \small WASP-40b: Independent Discovery of the 0.6 M Transiting Exoplanet HAT-P-27b}
-%{}
-%{\small Anderson, D.~R., et al. 2011, PASP, 123, 555}
-%%------------------------------------------------
-%\entry
-%{\small 2011}
-%{\normalfont \small Independent Discovery of the Transiting Exoplanet HAT-P-14b}
-%{}
-%{\small Simpson, E.~K., et al. 2011, AJ, 141, 161}
-%%------------------------------------------------
-%\entry
-%{\small 2011}
-%{\normalfont \small WASP-38b: a transiting exoplanet in an eccentric, 6.87d period orbit}
-%{}
-%{\small Barros, S.~C.~C., et al. 2011, A\&A, 525, A54}
-%%------------------------------------------------
-%\end{entrylist}
 
 \end{document}
 
